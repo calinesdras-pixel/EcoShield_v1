@@ -283,6 +283,18 @@ a:focus-visible {
   margin: 0;
 }
 
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+/* Éléments du menu mobile : cachés sur ordinateur */
+.burger,
+.sidebar-close,
+.sidebar-overlay { display: none; }
+
 .period-pill {
   background: var(--sky);
   color: var(--blue);
@@ -752,46 +764,94 @@ footer {
 
 /* =========================================
    18. RESPONSIVE : MOBILES
+   La sidebar devient un menu coulissant
+   ouvert par le bouton burger
 ========================================= */
 
 @media (max-width: 720px) {
+
+  /* --- Sidebar hors-écran, glisse depuis la gauche --- */
   .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 12px;
-    background: linear-gradient(100deg, var(--forest), var(--navy));
+    width: min(280px, 82vw);
+    height: 100dvh;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform .3s ease, visibility 0s linear .3s;
+    z-index: 30;
   }
 
-  .brand { padding: 0 5px 12px; }
-  .brand img { width: 35px; height: 35px; }
+  body.nav-open .sidebar {
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform .3s ease, visibility 0s;
+  }
 
-  .sidebar nav {
-    display: flex;
-    overflow-x: auto;
+  .brand { position: relative; }
+
+  .sidebar-close {
+    display: block;
+    margin-left: auto;
+    width: 34px;
+    height: 34px;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, .1);
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  /* --- Fond sombre --- */
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 42, 34, .55);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease;
+    z-index: 20;
+  }
+
+  body.nav-open .sidebar-overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  body.nav-open { overflow: hidden; }
+
+  /* --- Bouton burger --- */
+  .burger {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 5px;
-    padding-bottom: 5px;
-    scrollbar-width: thin;
+    width: 42px;
+    height: 42px;
+    padding: 0 11px;
+    flex-shrink: 0;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    cursor: pointer;
   }
 
-  .nav-label,
-  .secondary-label,
-  .sidebar-footer { display: none; }
-
-  .nav-btn {
-    white-space: nowrap;
-    width: auto;
-    padding: 9px 11px;
-    font-size: 11px;
+  .burger span {
+    display: block;
+    height: 2px;
+    background: var(--navy);
+    border-radius: 2px;
+    transition: transform .25s ease, opacity .2s ease;
   }
 
-  .nav-btn i,
-  .nav-btn svg {
-    width: 17px;
-    height: 17px;
-    min-width: 17px;
-  }
+  body.nav-open .burger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  body.nav-open .burger span:nth-child(2) { opacity: 0; }
+  body.nav-open .burger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+  /* --- Reste de la mise en page mobile --- */
   .main { margin: 0; }
 
   .topbar {
