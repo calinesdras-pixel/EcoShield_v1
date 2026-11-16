@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EcoShield — Earth System Trend Detective</title>
+<meta name="description" content="Explorer, mesurer et comprendre les tendances environnementales du Gabon à partir de données satellitaires.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="demoBanner" class="demo-banner" role="status" hidden>
+  <a href="#methods">Détails</a>
+</div>
+
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Navigation principale">
+    <a class="brand" href="#overview" aria-label="EcoShield, accueil"><img src="assets/logo.png" alt="EcoShield"></a>
+    <nav>
+      <a href="#overview" data-view="overview"><i data-lucide="globe"></i>Overview</a>
+      <a href="#explore" data-view="explore"><i data-lucide="map"></i>Explore</a>
+      <a href="#trends" data-view="trends"><i data-lucide="trending-up"></i>Trends</a>
+      <a href="#compare" data-view="compare"><i data-lucide="git-compare"></i>Compare</a>
+      <a href="#methods" data-view="methods"><i data-lucide="book-open"></i>Data &amp; Methods</a>
+      <a href="#about" data-view="about"><i data-lucide="info"></i>About</a>
+    </nav>
+    <p class="signature">Explore. Detect. Measure. Understand.</p>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+      <h2 id="sectionTitle">Overview</h2>
+      <span class="topbar-period" id="topPeriod"></span>
+      <a class="topbar-doc" href="#methods"><i data-lucide="file-text"></i>Documentation</a>
+    </header>
+
+    <main id="content">
+      <!-- OVERVIEW -->
+      <section class="view" id="view-overview" aria-labelledby="ovTitle">
+        <div class="hero">
+          <div class="hero-text">
+            <h1 id="ovTitle">Comment le Gabon change-t-il, province par province ?</h1>
+            <p class="lead">EcoShield transforme des données satellitaires et des modèles scientifiques en tendances mesurées : température, précipitations et surfaces brûlées, de l'échelle nationale aux neuf provinces.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#explore" id="startBtn">Start Exploring</a>
+              <a class="btn btn-secondary" href="#methods">Sources et méthodes</a>
+            </div>
+            <div class="kpis kpis-hero" id="ovKpis"></div>
+          </div>
+          <div class="hero-map card map-card">
+            <div class="map-head"><span>Tendance de la température par province</span><span id="ovMapPeriod" class="muted"></span></div>
+            <div id="mapOverview" class="map" role="application" aria-label="Carte du Gabon et de ses neuf provinces"></div>
+            <div class="legend-inline" id="ovLegend"></div>
+          </div>
+        </div>
+        <div class="two-col">
+          <div class="card"><h3>Les neuf provinces</h3><div class="chips" id="ovProvinces"></div></div>
+          <div class="card"><h3>Variables disponibles</h3><div id="ovVars" class="var-list"></div><p class="muted small" id="ovLatest"></p></div>
+        </div>
+      </section>
+
+      <!-- EXPLORE -->
+      <section class="view" id="view-explore" aria-label="Exploration géographique" hidden>
+        <div class="explore">
+          <aside class="panel card" aria-label="Paramètres d'exploration">
+            <h3>Paramètres</h3>
+            <div id="filtersExplore"></div>
+            <div id="varCard" class="info-box"></div>
+            <div id="regionInfo" class="info-box"></div>
+            <h3 class="legend-title">Légende</h3>
+            <div id="legend" class="legend"></div>
+            <a class="btn btn-primary btn-block" href="#trends">Voir l'analyse des tendances</a>
+          </aside>
+          <div class="card map-card explore-map">
+            <div class="map-head"><span id="exMapTitle"></span><span class="muted" id="exMapSub"></span></div>
+            <div id="mapExplore" class="map map-large" role="application" aria-label="Carte interactive du Gabon"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRENDS -->
+      <section class="view" id="view-trends" aria-label="Analyse des tendances" hidden>
+        <div class="card filter-bar" id="filtersTrends"></div>
+        <div id="trendBody"></div>
+      </section>
+
+      <!-- COMPARE -->
+      <section class="view" id="view-compare" aria-label="Comparaison territoriale" hidden>
+        <div class="card filter-bar" id="compareControls"></div>
+        <div id="compareBody"></div>
+      </section>
+
+      <!-- METHODS -->
+      <section class="view prose-view" id="view-methods" aria-label="Données et méthodes" hidden>
+        <div id="methodsBody"></div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="view prose-view" id="view-about" aria-label="À propos" hidden>
+        <div class="card about">
+          <img src="assets/logo.png" alt="EcoShield" class="about-logo">
+          <h1>À propos d'EcoShield</h1>
+          <p class="lead">EcoShield rend l'analyse des changements environnementaux plus accessible au Gabon. En combinant observation de la Terre, analyse géospatiale et statistiques, la plateforme permet de passer de l'observation à une compréhension quantitative des tendances.</p>
+          <p>Le projet répond au défi « Be An Earth System Trend Detective! » du NASA Space Apps Challenge. Il fonctionne sans serveur applicatif : des scripts Python collectent et analysent les données, puis produisent des fichiers CSV et JSON lus par cette interface.</p>
+          <p>L'analyse statistique est la valeur ajoutée du produit : chaque chiffre affiché provient d'un calcul reproductible, chaque graphique renvoie à sa source et à sa méthode, et chaque limite de résolution est signalée.</p>
+          <p class="muted small" id="aboutVersion"></p>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/chart.umd.js"></script>
+<script src="vendor/lucide.min.js"></script>
+<script src="data/bundle.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/map.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

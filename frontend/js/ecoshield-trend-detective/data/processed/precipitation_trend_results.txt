@@ -1,0 +1,32 @@
+
+========== ANALYSE DES TENDANCES : ECOSHIELD ==========
+
+Période : 2001 - 2025
+Nombre d'années : 25
+
+========== MANN-KENDALL ==========
+
+Tendance détectée : Décroissante
+Statistique S : -104.0
+Tau de Kendall : -0.3467
+Valeur Z : -2.4056
+Valeur p : 0.016148
+Significativité : Significative au seuil de 5 %
+
+========== PENTE DE SEN ==========
+
+Pente annuelle : -27.2148 mm/an
+Pente décennale : -272.1475 mm/décennie
+Ordonnée à l'origine : 2071.3670
+
+========== CONCLUSION AUTOMATIQUE ==========
+
+Une tendance décroissante statistiquement significative a été détectée.
+
+Attention : le test original de Mann-Kendall ne corrige pas
+automatiquement l'autocorrélation temporelle.
+
+Ces résultats doivent être interprétés avec les limites
+spatiales et méthodologiques des données NASA POWER.
+
+=======================================================

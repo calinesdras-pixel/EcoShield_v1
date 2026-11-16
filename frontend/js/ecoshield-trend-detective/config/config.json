@@ -1,0 +1,76 @@
+{
+  "project": "EcoShield",
+  "subtitle": "Earth System Trend Detective",
+  "version": "1.0.0",
+  "study_period": {"start_year": 2001, "end_year": 2025},
+  "stats": {
+    "alpha": 0.05,
+    "min_years": 10,
+    "min_obs_per_month": 8,
+    "method": "Mann-Kendall saisonnier (Hirsch & Slack) + pente de Sen saisonnière ; variance corrigée de l'autocorrélation d'ordre 1 (taille d'échantillon effective, Yue & Wang 2004)"
+  },
+  "variables": {
+    "T2M": {
+      "name": "Température moyenne de l'air à 2 m",
+      "short": "Température",
+      "icon": "thermometer",
+      "definition": "Température de l'air mesurée à 2 mètres au-dessus de la surface, moyennée sur le mois.",
+      "unit": "°C",
+      "trend_unit": "°C/an",
+      "source": "NASA POWER (données associées à MERRA-2)",
+      "product": "T2M",
+      "temporal_resolution": "Mensuelle",
+      "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+      "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+      "priority": 1,
+      "coarse": true,
+      "decimals": 2
+    },
+    "PRECTOTCORR": {
+      "name": "Précipitations corrigées",
+      "short": "Précipitations",
+      "icon": "cloud-rain",
+      "definition": "Précipitations corrigées par les observations, exprimées en cumul mensuel.",
+      "unit": "mm/mois",
+      "trend_unit": "mm/mois par an",
+      "source": "NASA POWER",
+      "product": "PRECTOTCORR",
+      "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+      "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+      "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+      "priority": 1,
+      "coarse": true,
+      "decimals": 1
+    },
+    "BURNED_AREA": {
+      "name": "Surface brûlée",
+      "short": "Surface brûlée",
+      "icon": "flame",
+      "definition": "Surface détectée comme brûlée au cours du mois, additionnée sur la zone.",
+      "unit": "km²",
+      "trend_unit": "km²/mois par an",
+      "source": "MODIS Terra et Aqua",
+      "product": "MCD64A1 (Burned Area)",
+      "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+      "spatial_resolution": "500 m (nominal)",
+      "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+      "priority": 2,
+      "coarse": false,
+      "decimals": 1
+    }
+  },
+  "regions": [
+    {"id": "gabon", "name": "Gabon (national)", "level": "national", "area_km2_approx": 267668},
+    {"id": "estuaire", "name": "Estuaire", "level": "province", "area_km2_approx": 20740},
+    {"id": "haut-ogooue", "name": "Haut-Ogooué", "level": "province", "area_km2_approx": 36547},
+    {"id": "moyen-ogooue", "name": "Moyen-Ogooué", "level": "province", "area_km2_approx": 18535},
+    {"id": "ngounie", "name": "Ngounié", "level": "province", "area_km2_approx": 37750},
+    {"id": "nyanga", "name": "Nyanga", "level": "province", "area_km2_approx": 21285},
+    {"id": "ogooue-ivindo", "name": "Ogooué-Ivindo", "level": "province", "area_km2_approx": 46075},
+    {"id": "ogooue-lolo", "name": "Ogooué-Lolo", "level": "province", "area_km2_approx": 25380},
+    {"id": "ogooue-maritime", "name": "Ogooué-Maritime", "level": "province", "area_km2_approx": 22890},
+    {"id": "woleu-ntem", "name": "Woleu-Ntem", "level": "province", "area_km2_approx": 38465},
+    {"id": "moanda", "name": "Moanda (zone locale)", "level": "local", "area_km2_approx": 400},
+    {"id": "transgabonais", "name": "Corridor du Transgabonais (zone locale)", "level": "local", "area_km2_approx": 4500}
+  ]
+}

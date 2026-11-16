@@ -1,0 +1,725 @@
+{
+ "demo": true,
+ "series": [
+  {
+   "variable": "T2M",
+   "region": "estuaire",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/T2M",
+   "unit": "°C",
+   "temporal_resolution": "Mensuelle",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "PRECTOTCORR",
+   "region": "estuaire",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/PRECTOTCORR",
+   "unit": "mm/mois",
+   "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "BURNED_AREA",
+   "region": "estuaire",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/MCD64A1 (Burned Area)",
+   "unit": "km²",
+   "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+   "spatial_resolution": "500 m (nominal)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 5,
+   "demo": true
+  },
+  {
+   "variable": "T2M",
+   "region": "haut-ogooue",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/T2M",
+   "unit": "°C",
+   "temporal_resolution": "Mensuelle",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "PRECTOTCORR",
+   "region": "haut-ogooue",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/PRECTOTCORR",
+   "unit": "mm/mois",
+   "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "BURNED_AREA",
+   "region": "haut-ogooue",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/MCD64A1 (Burned Area)",
+   "unit": "km²",
+   "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+   "spatial_resolution": "500 m (nominal)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 6,
+   "demo": true
+  },
+  {
+   "variable": "T2M",
+   "region": "moyen-ogooue",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/T2M",
+   "unit": "°C",
+   "temporal_resolution": "Mensuelle",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "PRECTOTCORR",
+   "region": "moyen-ogooue",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/PRECTOTCORR",
+   "unit": "mm/mois",
+   "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "BURNED_AREA",
+   "region": "moyen-ogooue",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/MCD64A1 (Burned Area)",
+   "unit": "km²",
+   "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+   "spatial_resolution": "500 m (nominal)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 6,
+   "demo": true
+  },
+  {
+   "variable": "T2M",
+   "region": "ngounie",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/T2M",
+   "unit": "°C",
+   "temporal_resolution": "Mensuelle",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "PRECTOTCORR",
+   "region": "ngounie",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/PRECTOTCORR",
+   "unit": "mm/mois",
+   "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "BURNED_AREA",
+   "region": "ngounie",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/MCD64A1 (Burned Area)",
+   "unit": "km²",
+   "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+   "spatial_resolution": "500 m (nominal)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 8,
+   "demo": true
+  },
+  {
+   "variable": "T2M",
+   "region": "nyanga",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/T2M",
+   "unit": "°C",
+   "temporal_resolution": "Mensuelle",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "PRECTOTCORR",
+   "region": "nyanga",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/PRECTOTCORR",
+   "unit": "mm/mois",
+   "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "BURNED_AREA",
+   "region": "nyanga",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/MCD64A1 (Burned Area)",
+   "unit": "km²",
+   "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+   "spatial_resolution": "500 m (nominal)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 6,
+   "demo": true
+  },
+  {
+   "variable": "T2M",
+   "region": "ogooue-ivindo",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/T2M",
+   "unit": "°C",
+   "temporal_resolution": "Mensuelle",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "PRECTOTCORR",
+   "region": "ogooue-ivindo",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/PRECTOTCORR",
+   "unit": "mm/mois",
+   "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "BURNED_AREA",
+   "region": "ogooue-ivindo",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/MCD64A1 (Burned Area)",
+   "unit": "km²",
+   "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+   "spatial_resolution": "500 m (nominal)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 6,
+   "demo": true
+  },
+  {
+   "variable": "T2M",
+   "region": "ogooue-lolo",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/T2M",
+   "unit": "°C",
+   "temporal_resolution": "Mensuelle",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "PRECTOTCORR",
+   "region": "ogooue-lolo",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/PRECTOTCORR",
+   "unit": "mm/mois",
+   "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "BURNED_AREA",
+   "region": "ogooue-lolo",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/MCD64A1 (Burned Area)",
+   "unit": "km²",
+   "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+   "spatial_resolution": "500 m (nominal)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 6,
+   "demo": true
+  },
+  {
+   "variable": "T2M",
+   "region": "ogooue-maritime",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/T2M",
+   "unit": "°C",
+   "temporal_resolution": "Mensuelle",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "PRECTOTCORR",
+   "region": "ogooue-maritime",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/PRECTOTCORR",
+   "unit": "mm/mois",
+   "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "BURNED_AREA",
+   "region": "ogooue-maritime",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/MCD64A1 (Burned Area)",
+   "unit": "km²",
+   "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+   "spatial_resolution": "500 m (nominal)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 4,
+   "demo": true
+  },
+  {
+   "variable": "T2M",
+   "region": "woleu-ntem",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/T2M",
+   "unit": "°C",
+   "temporal_resolution": "Mensuelle",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "PRECTOTCORR",
+   "region": "woleu-ntem",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/PRECTOTCORR",
+   "unit": "mm/mois",
+   "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "BURNED_AREA",
+   "region": "woleu-ntem",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/MCD64A1 (Burned Area)",
+   "unit": "km²",
+   "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+   "spatial_resolution": "500 m (nominal)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 9,
+   "demo": true
+  },
+  {
+   "variable": "T2M",
+   "region": "gabon",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/T2M",
+   "unit": "°C",
+   "temporal_resolution": "Mensuelle",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "PRECTOTCORR",
+   "region": "gabon",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/PRECTOTCORR",
+   "unit": "mm/mois",
+   "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "BURNED_AREA",
+   "region": "gabon",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/MCD64A1 (Burned Area)",
+   "unit": "km²",
+   "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+   "spatial_resolution": "500 m (nominal)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "T2M",
+   "region": "moanda",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/T2M",
+   "unit": "°C",
+   "temporal_resolution": "Mensuelle",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "PRECTOTCORR",
+   "region": "moanda",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/PRECTOTCORR",
+   "unit": "mm/mois",
+   "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "BURNED_AREA",
+   "region": "moanda",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/MCD64A1 (Burned Area)",
+   "unit": "km²",
+   "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+   "spatial_resolution": "500 m (nominal)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 6,
+   "demo": true
+  },
+  {
+   "variable": "T2M",
+   "region": "transgabonais",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/T2M",
+   "unit": "°C",
+   "temporal_resolution": "Mensuelle",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cellules de grille dont le centre est dans la zone (valeurs valides uniquement).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "PRECTOTCORR",
+   "region": "transgabonais",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/PRECTOTCORR",
+   "unit": "mm/mois",
+   "temporal_resolution": "Mensuelle (l'API fournit des mm/jour moyens, convertis en cumul mensuel : mm/jour × nombre de jours du mois)",
+   "spatial_resolution": "Grille d'environ 0,5° × 0,625° (≈ 55 × 70 km)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Moyenne régionale des cumuls mensuels (mm/mois) des cellules valides.",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 0,
+   "demo": true
+  },
+  {
+   "variable": "BURNED_AREA",
+   "region": "transgabonais",
+   "source": "DONNÉES SYNTHÉTIQUES (démonstration) — simulation, non mesurée",
+   "product": "synthetic/MCD64A1 (Burned Area)",
+   "unit": "km²",
+   "temporal_resolution": "Mensuelle (depuis novembre 2000)",
+   "spatial_resolution": "500 m (nominal)",
+   "period": [
+    "2001-01",
+    "2025-12"
+   ],
+   "retrieved_at": "2026-11-14T11:55:29+00:00",
+   "aggregation": "Somme des surfaces des pixels valides brûlés après contrôle qualité ; pixels invalides ou manquants exclus (jamais comptés comme non brûlés).",
+   "n_cells": 0,
+   "single_cell_fallback": false,
+   "n_months": 300,
+   "n_missing": 6,
+   "demo": true
+  }
+ ]
+}

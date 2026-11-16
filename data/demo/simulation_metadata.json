@@ -1,0 +1,21 @@
+{
+  "project": "EcoShield",
+  "dataset": "Provincial climate simulation",
+  "source": "ECOSHIELD_SIMULATION",
+  "status": "SIMULATED",
+  "seed": 20261115,
+  "period": [
+    "2016-01",
+    "2025-12"
+  ],
+  "provinces": 9,
+  "records": 1080,
+  "variables": [
+    "temperature_c",
+    "precipitation_mm",
+    "humidite_sol_kg_m2"
+  ],
+  "reference_period": "2016-2024",
+  "methodology": "Synthetic values generated from illustrative provincial profiles, simplified seasonality and random variability.",
+  "warning": "These values are fictional demonstration data. They are not satellite observations, measurements, forecasts or validated climate estimates."
+}

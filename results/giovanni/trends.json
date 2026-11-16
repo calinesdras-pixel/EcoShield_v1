@@ -1,0 +1,237 @@
+{
+ "parametres": {
+  "alpha": 0.05,
+  "correction": "Benjamini-Hochberg",
+  "famille": "3 variables (une zone) ; analyse saisonnière et analyse annuelle corrigées séparément (famille de 3 tests chacune)",
+  "autocorrelation": "Facteur de variance (1+r1)/(1−r1), appliqué si r1 > 1,96/√n, plafonné à 10 : approximation (Yue & Wang 2004), pas une correction exacte",
+  "zone": "Boîtes englobantes Giovanni (région de Libreville) ; aucune extrapolation aux provinces"
+ },
+ "resultats": {
+  "TAIR": {
+   "variable": "Température de l'air",
+   "unite": "°C",
+   "periode": [
+    "2014-12",
+    "2026-07"
+   ],
+   "saisonnier": {
+    "status": "ok",
+    "n_obs": 140,
+    "n_seasons": 12,
+    "sen_slope": 0.03719055555555606,
+    "ci_low": -0.002497987265692449,
+    "ci_high": 0.0851137068413967,
+    "mk_S": 178.0,
+    "mk_z": 1.8395147995475243,
+    "p_value": 0.06583950316011872,
+    "autocorr_r1": 0.5935679676257496,
+    "variance_inflation": 3.9208719802831915,
+    "significant": false,
+    "direction": "none",
+    "total_change": 0.4338898148148179,
+    "span_years": 11.666666666666591,
+    "ols_slope": 0.03280398826179203,
+    "ols_r2": 0.017120492505635188,
+    "level": 25.894734457142853,
+    "t_mid": 2020.708333333333,
+    "p_value_ajustee_BH": 0.19751850948035615,
+    "significatif_apres_BH": false,
+    "conclusion": "Tendance non significative au seuil retenu (absence de preuve statistique, pas preuve d'absence de tendance)"
+   },
+   "annuel": {
+    "status": "ok",
+    "n_obs": 11,
+    "sen_slope": 0.0475275238095248,
+    "ci_low": -0.018726709775319324,
+    "ci_high": 0.1173610605002359,
+    "mk_S": 23.0,
+    "mk_z": 1.7126976771553506,
+    "p_value": 0.08676817270387562,
+    "p_value_ajustee_BH": 0.26030451811162686,
+    "significatif_apres_BH": false,
+    "conclusion": "Tendance non significative au seuil retenu (absence de preuve statistique, pas preuve d'absence de tendance)"
+   },
+   "serie_annuelle": {
+    "statistique": "moyenne annuelle",
+    "annees": [
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "valeurs": [
+     25.3388,
+     25.6883,
+     25.5405,
+     25.9012,
+     26.2712,
+     26.2571,
+     25.9704,
+     25.7347,
+     26.021,
+     26.3153,
+     25.7856
+    ]
+   },
+   "unite_pente_saisonnier": "°C/an",
+   "unite_pente_annuel": "°C/an"
+  },
+  "PRECIP": {
+   "variable": "Précipitations",
+   "unite": "mm/mois",
+   "periode": [
+    "2014-12",
+    "2025-09"
+   ],
+   "saisonnier": {
+    "status": "ok",
+    "n_obs": 130,
+    "n_seasons": 12,
+    "sen_slope": -0.3331395892857143,
+    "ci_low": -2.945972615310679,
+    "ci_high": 0.8219555407150935,
+    "mk_S": -26.0,
+    "mk_z": -0.5735393346764044,
+    "p_value": 0.566279574045329,
+    "autocorr_r1": 0.09791445374000486,
+    "variance_inflation": 1.0,
+    "significant": false,
+    "direction": "none",
+    "total_change": -3.6090122172619052,
+    "span_years": 10.833333333333334,
+    "ols_slope": -3.2941816058884825,
+    "ols_r2": 0.005636190848303357,
+    "level": 182.14715776923074,
+    "t_mid": 2020.2916666666663,
+    "p_value_ajustee_BH": 0.8494193610679935,
+    "significatif_apres_BH": false,
+    "conclusion": "Tendance non significative au seuil retenu (absence de preuve statistique, pas preuve d'absence de tendance)"
+   },
+   "annuel": {
+    "status": "ok",
+    "n_obs": 10,
+    "sen_slope": -39.95684912500002,
+    "ci_low": -111.04454707036824,
+    "ci_high": 51.39482173383884,
+    "mk_S": -7.0,
+    "mk_z": -0.5366563145999494,
+    "p_value": 0.5915050369949166,
+    "p_value_ajustee_BH": 0.640428787412791,
+    "significatif_apres_BH": false,
+    "conclusion": "Tendance non significative au seuil retenu (absence de preuve statistique, pas preuve d'absence de tendance)"
+   },
+   "serie_annuelle": {
+    "statistique": "cumul annuel (mm/an)",
+    "annees": [
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024
+    ],
+    "valeurs": [
+     1964.894,
+     2377.2458,
+     2766.0196,
+     2435.388,
+     1733.7556,
+     2165.7023,
+     2388.5147,
+     2206.4124,
+     2028.1794,
+     2057.591
+    ]
+   },
+   "unite_pente_saisonnier": "mm/mois par an",
+   "unite_pente_annuel": "mm/an par an (mm/an²)"
+  },
+  "SOILM": {
+   "variable": "Humidité du sol (0–10 cm)",
+   "unite": "kg/m²",
+   "periode": [
+    "2014-12",
+    "2026-07"
+   ],
+   "saisonnier": {
+    "status": "ok",
+    "n_obs": 140,
+    "n_seasons": 12,
+    "sen_slope": 0.00951387500000056,
+    "ci_low": -0.10013034923220156,
+    "ci_high": 0.10156821461942633,
+    "mk_S": 16.0,
+    "mk_z": 0.16753273793904955,
+    "p_value": 0.8669508903751262,
+    "autocorr_r1": 0.544926153329341,
+    "variance_inflation": 3.3948911031299454,
+    "significant": false,
+    "direction": "none",
+    "total_change": 0.11099520833333915,
+    "span_years": 11.666666666666591,
+    "ols_slope": -0.031688651488048725,
+    "ols_r2": 0.0005146528637576253,
+    "level": 29.806521235714282,
+    "t_mid": 2020.708333333333,
+    "p_value_ajustee_BH": 0.8669508903751262,
+    "significatif_apres_BH": false,
+    "conclusion": "Tendance non significative au seuil retenu (absence de preuve statistique, pas preuve d'absence de tendance)"
+   },
+   "annuel": {
+    "status": "ok",
+    "n_obs": 11,
+    "sen_slope": -0.056036316666666156,
+    "ci_low": -0.19845308622065336,
+    "ci_high": 0.23204813562034676,
+    "mk_S": -7.0,
+    "mk_z": -0.46709936649691375,
+    "p_value": 0.640428787412791,
+    "p_value_ajustee_BH": 0.640428787412791,
+    "significatif_apres_BH": false,
+    "conclusion": "Tendance non significative au seuil retenu (absence de preuve statistique, pas preuve d'absence de tendance)"
+   },
+   "serie_annuelle": {
+    "statistique": "moyenne annuelle",
+    "annees": [
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "valeurs": [
+     28.5998,
+     30.1445,
+     29.9463,
+     29.9923,
+     29.5189,
+     30.7133,
+     31.1731,
+     29.6661,
+     28.9887,
+     28.8191,
+     29.6131
+    ]
+   },
+   "unite_pente_saisonnier": "kg/m² par an",
+   "unite_pente_annuel": "kg/m² par an"
+  }
+ }
+}

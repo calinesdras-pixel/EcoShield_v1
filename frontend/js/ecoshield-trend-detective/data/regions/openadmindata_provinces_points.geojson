@@ -1,0 +1,150 @@
+{
+  "type": "FeatureCollection",
+  "name": "provinces",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.048,
+          -2.883
+        ]
+      },
+      "properties": {
+        "id": "GAB005",
+        "name_local": "Nyanga",
+        "name_en": "Nyanga",
+        "slug": "nyanga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.364,
+          -1.84
+        ]
+      },
+      "properties": {
+        "id": "GAB004",
+        "name_local": "Ngounie",
+        "name_en": "Ngounie",
+        "slug": "ngounie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.542,
+          -1.495
+        ]
+      },
+      "properties": {
+        "id": "GAB008",
+        "name_local": "Ogooue-Maritime",
+        "name_en": "Ogooue-Maritime",
+        "slug": "ogooue-maritime"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.659,
+          -1.43
+        ]
+      },
+      "properties": {
+        "id": "GAB002",
+        "name_local": "Haut-Ogooue",
+        "name_en": "Haut-Ogooue",
+        "slug": "haut-ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.43,
+          -0.462
+        ]
+      },
+      "properties": {
+        "id": "GAB003",
+        "name_local": "Moyen-Ogooue",
+        "name_en": "Moyen-Ogooue",
+        "slug": "moyen-ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.512,
+          -1.155
+        ]
+      },
+      "properties": {
+        "id": "GAB007",
+        "name_local": "Ogooue-Lolo",
+        "name_en": "Ogooue-Lolo",
+        "slug": "ogooue-lolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.857,
+          0.412
+        ]
+      },
+      "properties": {
+        "id": "GAB001",
+        "name_local": "Estuaire",
+        "name_en": "Estuaire",
+        "slug": "estuaire"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.841,
+          0.496
+        ]
+      },
+      "properties": {
+        "id": "GAB006",
+        "name_local": "Ogooue-Ivindo",
+        "name_en": "Ogooue-Ivindo",
+        "slug": "ogooue-ivindo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.549,
+          1.513
+        ]
+      },
+      "properties": {
+        "id": "GAB009",
+        "name_local": "Woleu-Ntem",
+        "name_en": "Woleu-Ntem",
+        "slug": "woleu-ntem"
+      }
+    }
+  ]
+}

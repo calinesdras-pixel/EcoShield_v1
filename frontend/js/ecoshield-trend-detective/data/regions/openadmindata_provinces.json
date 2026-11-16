@@ -1,0 +1,86 @@
+{
+  "country": {
+    "code": "ga",
+    "name_en": "Gabon"
+  },
+  "level": {
+    "key": "province",
+    "name_local": "Province",
+    "name_en": "Province"
+  },
+  "count": 9,
+  "entities": [
+    {
+      "id": "GAB005",
+      "name_local": "Nyanga",
+      "name_en": "Nyanga",
+      "slug": "nyanga",
+      "lat": -2.883,
+      "lon": 11.048
+    },
+    {
+      "id": "GAB004",
+      "name_local": "Ngounie",
+      "name_en": "Ngounie",
+      "slug": "ngounie",
+      "lat": -1.84,
+      "lon": 11.364
+    },
+    {
+      "id": "GAB008",
+      "name_local": "Ogooue-Maritime",
+      "name_en": "Ogooue-Maritime",
+      "slug": "ogooue-maritime",
+      "lat": -1.495,
+      "lon": 9.542
+    },
+    {
+      "id": "GAB002",
+      "name_local": "Haut-Ogooue",
+      "name_en": "Haut-Ogooue",
+      "slug": "haut-ogooue",
+      "lat": -1.43,
+      "lon": 13.659
+    },
+    {
+      "id": "GAB003",
+      "name_local": "Moyen-Ogooue",
+      "name_en": "Moyen-Ogooue",
+      "slug": "moyen-ogooue",
+      "lat": -0.462,
+      "lon": 10.43
+    },
+    {
+      "id": "GAB007",
+      "name_local": "Ogooue-Lolo",
+      "name_en": "Ogooue-Lolo",
+      "slug": "ogooue-lolo",
+      "lat": -1.155,
+      "lon": 12.512
+    },
+    {
+      "id": "GAB001",
+      "name_local": "Estuaire",
+      "name_en": "Estuaire",
+      "slug": "estuaire",
+      "lat": 0.412,
+      "lon": 9.857
+    },
+    {
+      "id": "GAB006",
+      "name_local": "Ogooue-Ivindo",
+      "name_en": "Ogooue-Ivindo",
+      "slug": "ogooue-ivindo",
+      "lat": 0.496,
+      "lon": 12.841
+    },
+    {
+      "id": "GAB009",
+      "name_local": "Woleu-Ntem",
+      "name_en": "Woleu-Ntem",
+      "slug": "woleu-ntem",
+      "lat": 1.513,
+      "lon": 11.549
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "country": "Gabon",
+  "dataset": "Principales villes du Gabon",
+  "count": 10,
+  "updated_at": "2026-11-15T03:34:53.585724+00:00",
+  "note": "Points g?ographiques des villes. Ces coordonn?es ne repr?sentent pas des limites administratives.",
+  "cities": [
+    {
+      "name": "Libreville",
+      "province": "Estuaire",
+      "department": "Libreville",
+      "lat": 0.383,
+      "lon": 9.45,
+      "source": "Open Admin Data"
+    },
+    {
+      "name": "Port-Gentil",
+      "province": "Ogoou?-Maritime",
+      "department": "Bendje",
+      "lat": -0.727,
+      "lon": 8.792,
+      "source": "Open Admin Data"
+    },
+    {
+      "name": "Franceville",
+      "province": "Haut-Ogoou?",
+      "department": "Passa",
+      "lat": -1.608,
+      "lon": 13.615,
+      "source": "Open Admin Data"
+    },
+    {
+      "name": "Oyem",
+      "province": "Woleu-Ntem",
+      "department": "Woleu",
+      "lat": 1.598,
+      "lon": 11.575,
+      "source": "Open Admin Data"
+    },
+    {
+      "name": "Lambar?n?",
+      "province": "Moyen-Ogoou?",
+      "department": "Ogoou? et des Lacs",
+      "lat": -0.7001,
+      "lon": 10.24055,
+      "source": "GeoNames"
+    },
+    {
+      "name": "Tchibanga",
+      "province": "Nyanga",
+      "department": "Mougoutsi",
+      "lat": -2.85,
+      "lon": 11.033,
+      "source": "Open Admin Data"
+    },
+    {
+      "name": "Koulamoutou",
+      "province": "Ogoou?-Lolo",
+      "department": "Lolo-Bouenguidi",
+      "lat": -1.13,
+      "lon": 12.474,
+      "source": "Open Admin Data"
+    },
+    {
+      "name": "Makokou",
+      "province": "Ogoou?-Ivindo",
+      "department": "Ivindo",
+      "lat": 0.574,
+      "lon": 12.864,
+      "source": "Open Admin Data"
+    },
+    {
+      "name": "Mouila",
+      "province": "Ngouni?",
+      "department": "Douya-Onoye",
+      "lat": -1.863,
+      "lon": 11.06,
+      "source": "Open Admin Data"
+    },
+    {
+      "name": "Moanda",
+      "province": "Haut-Ogoou?",
+      "department": "L?bombi-L?you",
+      "lat": -1.565,
+      "lon": 13.189,
+      "source": "Open Admin Data"
+    }
+  ]
+}

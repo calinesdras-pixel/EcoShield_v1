@@ -1,0 +1,119 @@
+
+=====================================================
+       VALIDATION SCIENTIFIQUE - ECOSHIELD
+=====================================================
+
+PÉRIODE ANALYSÉE
+----------------
+
+Début : 2001
+Fin : 2025
+Nombre d'années : 25
+
+Variable : Précipitations annuelles estimées
+Unité : mm/an
+Source : NASA POWER - PRECTOTCORR
+
+
+=====================================================
+1. MANN-KENDALL ORIGINAL
+=====================================================
+
+Tendance : decreasing
+Statistique S : -104.0
+Tau : -0.3467
+Z : -2.4056
+p-value : 0.016148
+
+Significatif à 5 % : True
+
+
+=====================================================
+2. MANN-KENDALL HAMED-RAO
+=====================================================
+
+Tendance : decreasing
+Statistique S : -104.0
+Tau : -0.3467
+Z : -2.4056
+p-value : 0.016148
+
+Significatif à 5 % : True
+
+
+=====================================================
+3. MANN-KENDALL YUE-WANG
+=====================================================
+
+Tendance : decreasing
+Statistique S : -104.0
+Tau : -0.3467
+Z : -3.5428
+p-value : 0.000396
+
+Significatif à 5 % : True
+
+
+=====================================================
+4. ESTIMATION DE LA PENTE DE SEN
+=====================================================
+
+Pente annuelle : -27.2148 mm/an
+
+Pente décennale : -272.1475 mm/décennie
+
+Ordonnée à l'origine : 2071.3670
+
+
+=====================================================
+5. AUTOCORRÉLATION DES RÉSIDUS
+=====================================================
+
+Tendance linéaire retirée avant le calcul.
+
+Limite indicative : +/- 0.3920
+
+Retard 1 : 0.2614
+Retard 2 : 0.2681
+Retard 3 : 0.0910
+Retard 4 : 0.0302
+Retard 5 : -0.0746
+
+
+Attention :
+Les limites indiquées sont des repères approximatifs.
+Elles ne remplacent pas un test formel d'autocorrélation.
+
+
+=====================================================
+6. COMPARAISON DES MÉTHODES
+=====================================================
+
+Mann-Kendall original :
+True
+
+Hamed-Rao :
+True
+
+Yue-Wang :
+True
+
+=====================================================
+7. LIMITES MÉTHODOLOGIQUES
+=====================================================
+
+- Série limitée à 25 observations annuelles.
+- Données NASA POWER dérivées de produits de réanalyse.
+- Agrégation spatiale fondée sur les centres des cellules
+  situées à l'intérieur du polygone du Gabon.
+- Absence de pondération par intersection exacte des cellules
+  avec les frontières nationales.
+- Les méthodes statistiques partagent la même série
+  et ne constituent pas des validations indépendantes.
+- Une tendance décroissante ne démontre pas une causalité
+  liée au changement climatique.
+- Une diminution des précipitations annuelles ne signifie
+  pas nécessairement une diminution uniforme dans toutes
+  les régions du Gabon.
+
+=====================================================

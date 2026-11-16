@@ -1,0 +1,55 @@
+﻿(() => {
+  const container = document.getElementById("ecoshieldMap");
+
+  if (!container || typeof maplibregl === "undefined") {
+    console.error("EcoShield : conteneur ou bibliothèque MapLibre introuvable.");
+    return;
+  }
+
+  const map = new maplibregl.Map({
+    container: "ecoshieldMap",
+    style: {
+      version: 8,
+      sources: {
+        osm: {
+          type: "raster",
+          tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+          tileSize: 256,
+          attribution: "© OpenStreetMap contributors"
+        }
+      },
+      layers: [
+        {
+          id: "osm-base",
+          type: "raster",
+          source: "osm"
+        }
+      ]
+    },
+    center: [11.6, -0.83],
+    zoom: 5.5,
+    minZoom: 4,
+    maxZoom: 16,
+    attributionControl: true
+  });
+
+  map.addControl(new maplibregl.NavigationControl(), "top-right");
+
+  map.on("load", () => {
+    console.info("EcoShield : carte MapLibre chargée.");
+  });
+
+  map.on("error", (event) => {
+    console.error("EcoShield : erreur cartographique.", event.error);
+  });
+
+  const observer = new ResizeObserver(() => {
+    if (container.offsetWidth > 0 && container.offsetHeight > 0) {
+      map.resize();
+    }
+  });
+
+  observer.observe(container);
+
+  window.ecoshieldMap = map;
+})();

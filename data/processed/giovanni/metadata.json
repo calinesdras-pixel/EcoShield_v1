@@ -1,0 +1,150 @@
+{
+ "source": "NASA Giovanni",
+ "series": [
+  {
+   "code": "TAIR",
+   "source": "NASA Giovanni",
+   "fichier_source": "resultat_temperature_air.csv",
+   "sha256_source": "dbf4972184d2b06812891c4ccd21013b28317f251b0e81630d6d3e5db1c2f56b",
+   "titre_giovanni": "Time Series, Area-Averaged of Near surface air temperature monthly 0.25 deg. [GLDAS Model (monthly)",
+   "produit": "GLDAS Noah 0,25° mensuel (Tair_f_inst)",
+   "variable": "Température de l'air",
+   "unite_brute": "K",
+   "unite": "°C",
+   "unite_pente": "°C/an",
+   "conversion": "°C = K − 273,15",
+   "boite_englobante_lon_lat": "9.4,0.25,9.8,0.6",
+   "resolution_spatiale": "0,25° (≈ 28 km)",
+   "resolution_temporelle": "Mensuelle",
+   "date_collecte": "non fournie dans le fichier",
+   "periode_demandee": [
+    "2014-12-01T00:00:00Z",
+    "2026-11-30T23:59:59Z"
+   ],
+   "periode_analysee": [
+    "2014-12",
+    "2026-07"
+   ],
+   "annees_completes": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "n_lignes_fichier": 140,
+   "n_doublons": 0,
+   "n_attendues": 140,
+   "n_valides": 140,
+   "n_manquantes": 0,
+   "mois_absents": [],
+   "valeurs_atypiques_signalees": [],
+   "nettoyage": "Valeur de remplissage → manquant ; doublons de date supprimés (garde la première) ; aucune valeur extrême supprimée ; aucune interpolation.",
+   "agregation": "Moyenne spatiale sur la boîte englobante, calculée par Giovanni (non recalculée ici) ; agrégation mensuelle fournie par le produit.",
+   "url_reproduction": "https://giovanni.gsfc.nasa.gov/giovanni/#service=ArAvTs&starttime=2014-12-01T00:00:00Z&endtime=2026-11-30T23:59:59Z&shape=state_dept_countries_2017/shp_78&bbox=9.4E,0.25N,9.8E,0.6N&data=GLDAS_NOAH025_M_2_1_Tair_f_inst&dataKeyword=near%20air%20temperature&portal=GIOVANNI&format=json"
+  },
+  {
+   "code": "PRECIP",
+   "source": "NASA Giovanni",
+   "fichier_source": "resultat_precipitation.csv",
+   "sha256_source": "09d4c7f5273356c3a925c3aea6cede31074f1ac11fb6be98a4bae94a458857bd",
+   "titre_giovanni": "Time Series, Area-Averaged of Merged satellite-gauge precipitation estimate - Final Run (recommended for general use) (monthly)",
+   "produit": "GPM IMERG Final Run mensuel (précipitation)",
+   "variable": "Précipitations",
+   "unite_brute": "mm/h (taux moyen mensuel, unité confirmée par l'utilisateur)",
+   "unite": "mm/mois",
+   "unite_pente": "mm/mois par an",
+   "conversion": "cumul mensuel (mm) = taux (mm/h) × 24 × nombre de jours du mois",
+   "boite_englobante_lon_lat": "9.3,-0.7,9.7,0.6",
+   "resolution_spatiale": "0,1° (≈ 11 km)",
+   "resolution_temporelle": "Mensuelle",
+   "date_collecte": "non fournie dans le fichier",
+   "periode_demandee": [
+    "2014-12-01T00:00:00Z",
+    "2026-11-30T23:59:59Z"
+   ],
+   "periode_analysee": [
+    "2014-12",
+    "2025-09"
+   ],
+   "annees_completes": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ],
+   "n_lignes_fichier": 130,
+   "n_doublons": 0,
+   "n_attendues": 130,
+   "n_valides": 130,
+   "n_manquantes": 0,
+   "mois_absents": [],
+   "valeurs_atypiques_signalees": [
+    "2017-11"
+   ],
+   "nettoyage": "Valeur de remplissage → manquant ; doublons de date supprimés (garde la première) ; aucune valeur extrême supprimée ; aucune interpolation.",
+   "agregation": "Moyenne spatiale sur la boîte englobante, calculée par Giovanni (non recalculée ici) ; agrégation mensuelle fournie par le produit.",
+   "url_reproduction": "https://giovanni.gsfc.nasa.gov/giovanni/#service=ArAvTs&starttime=2014-12-01T00:00:00Z&endtime=2026-11-30T23:59:59Z&shape=state_dept_countries_2017/shp_78&bbox=9.3E,0.7S,9.7E,0.6N&data=GPM_3IMERGM_07_precipitation&variableFacets=dataProductObservation%3AObservation%3B&dataKeyword=precipitation&portal=GIOVANNI&format=json"
+  },
+  {
+   "code": "SOILM",
+   "source": "NASA Giovanni",
+   "fichier_source": "resultat_humiditer_sol.csv",
+   "sha256_source": "7819b195067fee29b21565a7c057d6594b19702159ea2824ed96f7079ccfc085",
+   "titre_giovanni": "Time Series, Area-Averaged of Soil moisture content (0 - 10 cm underground) monthly 0.25 deg. [GLDAS Model (monthly)",
+   "produit": "GLDAS Noah 0,25° mensuel (SoilMoi0_10cm_inst)",
+   "variable": "Humidité du sol (0–10 cm)",
+   "unite_brute": "kg/m²",
+   "unite": "kg/m²",
+   "unite_pente": "kg/m² par an",
+   "conversion": "aucune",
+   "boite_englobante_lon_lat": "9.3,-0.7,9.7,0.6",
+   "resolution_spatiale": "0,25° (≈ 28 km)",
+   "resolution_temporelle": "Mensuelle",
+   "date_collecte": "non fournie dans le fichier",
+   "periode_demandee": [
+    "2014-12-01T00:00:00Z",
+    "2026-11-30T23:59:59Z"
+   ],
+   "periode_analysee": [
+    "2014-12",
+    "2026-07"
+   ],
+   "annees_completes": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "n_lignes_fichier": 140,
+   "n_doublons": 0,
+   "n_attendues": 140,
+   "n_valides": 140,
+   "n_manquantes": 0,
+   "mois_absents": [],
+   "valeurs_atypiques_signalees": [],
+   "nettoyage": "Valeur de remplissage → manquant ; doublons de date supprimés (garde la première) ; aucune valeur extrême supprimée ; aucune interpolation.",
+   "agregation": "Moyenne spatiale sur la boîte englobante, calculée par Giovanni (non recalculée ici) ; agrégation mensuelle fournie par le produit.",
+   "url_reproduction": "https://giovanni.gsfc.nasa.gov/giovanni/#service=ArAvTs&starttime=2014-12-01T00:00:00Z&endtime=2026-11-30T23:59:59Z&shape=state_dept_countries_2017/shp_78&bbox=9.3E,0.7S,9.7E,0.6N&data=GLDAS_NOAH025_M_2_1_SoilMoi0_10cm_inst&dataKeyword=Soil%20moisture%20content%20(0%20-%2010%20cm%20underground)&portal=GIOVANNI&format=json"
+  }
+ ]
+}

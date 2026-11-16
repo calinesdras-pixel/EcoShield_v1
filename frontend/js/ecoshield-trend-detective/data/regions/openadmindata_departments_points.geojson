@@ -1,0 +1,918 @@
+{
+  "type": "FeatureCollection",
+  "name": "departments",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.736,
+          -0.175
+        ]
+      },
+      "properties": {
+        "id": "GAB003001",
+        "name_local": "Abanga-Bigne",
+        "name_en": "Abanga-Bigne",
+        "slug": "abanga-bigne",
+        "parent_id": "GAB003",
+        "parent_name_local": "Moyen-Ogooue",
+        "parent_name_en": "Moyen-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.567,
+          -3.08
+        ]
+      },
+      "properties": {
+        "id": "GAB005001",
+        "name_local": "Basse-Banio",
+        "name_en": "Basse-Banio",
+        "slug": "basse-banio",
+        "parent_id": "GAB005",
+        "parent_name_local": "Nyanga",
+        "parent_name_en": "Nyanga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.075,
+          -0.5
+        ]
+      },
+      "properties": {
+        "id": "GAB002011",
+        "name_local": "Bayi-Brikolo",
+        "name_en": "Bayi-Brikolo",
+        "slug": "bayi-brikolo",
+        "parent_id": "GAB002",
+        "parent_name_local": "Haut-Ogooue",
+        "parent_name_en": "Haut-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.302,
+          -0.883
+        ]
+      },
+      "properties": {
+        "id": "GAB008001",
+        "name_local": "Bendje",
+        "name_en": "Bendje",
+        "slug": "bendje",
+        "parent_id": "GAB008",
+        "parent_name_local": "Ogooue-Maritime",
+        "parent_name_en": "Ogooue-Maritime"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.796,
+          -2.041
+        ]
+      },
+      "properties": {
+        "id": "GAB004001",
+        "name_local": "Boumi-Louetsi",
+        "name_en": "Boumi-Louetsi",
+        "slug": "boumi-louetsi",
+        "parent_id": "GAB004",
+        "parent_name_local": "Ngounie",
+        "parent_name_en": "Ngounie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.128,
+          -0.833
+        ]
+      },
+      "properties": {
+        "id": "GAB002001",
+        "name_local": "Djoue",
+        "name_en": "Djoue",
+        "slug": "djoue",
+        "parent_id": "GAB002",
+        "parent_name_local": "Haut-Ogooue",
+        "parent_name_en": "Haut-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.909,
+          -1.475
+        ]
+      },
+      "properties": {
+        "id": "GAB002002",
+        "name_local": "Djouori-Agnili",
+        "name_en": "Djouori-Agnili",
+        "slug": "djouori-agnili",
+        "parent_id": "GAB002",
+        "parent_name_local": "Haut-Ogooue",
+        "parent_name_en": "Haut-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.37,
+          -2.325
+        ]
+      },
+      "properties": {
+        "id": "GAB004002",
+        "name_local": "Dola",
+        "name_en": "Dola",
+        "slug": "dola",
+        "parent_id": "GAB004",
+        "parent_name_local": "Ngounie",
+        "parent_name_en": "Ngounie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.914,
+          -2.437
+        ]
+      },
+      "properties": {
+        "id": "GAB005002",
+        "name_local": "Douigni",
+        "name_en": "Douigni",
+        "slug": "douigni",
+        "parent_id": "GAB005",
+        "parent_name_local": "Nyanga",
+        "parent_name_en": "Nyanga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4,
+          -2.76
+        ]
+      },
+      "properties": {
+        "id": "GAB005003",
+        "name_local": "Doutsila",
+        "name_en": "Doutsila",
+        "slug": "doutsila",
+        "parent_id": "GAB005",
+        "parent_name_local": "Nyanga",
+        "parent_name_en": "Nyanga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.095,
+          -1.857
+        ]
+      },
+      "properties": {
+        "id": "GAB004003",
+        "name_local": "Douya-Onoye",
+        "name_en": "Douya-Onoye",
+        "slug": "douya-onoye",
+        "parent_id": "GAB004",
+        "parent_name_local": "Ngounie",
+        "parent_name_en": "Ngounie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.498,
+          -1.628
+        ]
+      },
+      "properties": {
+        "id": "GAB008002",
+        "name_local": "Etimboue",
+        "name_en": "Etimboue",
+        "slug": "etimboue",
+        "parent_id": "GAB008",
+        "parent_name_local": "Ogooue-Maritime",
+        "parent_name_en": "Ogooue-Maritime"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.676,
+          0.905
+        ]
+      },
+      "properties": {
+        "id": "GAB009001",
+        "name_local": "Haut-Komo",
+        "name_en": "Haut-Komo",
+        "slug": "haut-komo",
+        "parent_id": "GAB009",
+        "parent_name_local": "Woleu-Ntem",
+        "parent_name_en": "Woleu-Ntem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.992,
+          2.057
+        ]
+      },
+      "properties": {
+        "id": "GAB009002",
+        "name_local": "Haut-Ntem",
+        "name_en": "Haut-Ntem",
+        "slug": "haut-ntem",
+        "parent_id": "GAB009",
+        "parent_name_local": "Woleu-Ntem",
+        "parent_name_en": "Woleu-Ntem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.015,
+          -3.731
+        ]
+      },
+      "properties": {
+        "id": "GAB005004",
+        "name_local": "Haute-Banio",
+        "name_en": "Haute-Banio",
+        "slug": "haute-banio",
+        "parent_id": "GAB005",
+        "parent_name_local": "Nyanga",
+        "parent_name_en": "Nyanga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.955,
+          0.664
+        ]
+      },
+      "properties": {
+        "id": "GAB006001",
+        "name_local": "Ivindo",
+        "name_en": "Ivindo",
+        "slug": "ivindo",
+        "parent_id": "GAB006",
+        "parent_name_local": "Ogooue-Ivindo",
+        "parent_name_en": "Ogooue-Ivindo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.261,
+          0.277
+        ]
+      },
+      "properties": {
+        "id": "GAB001001",
+        "name_local": "Komo",
+        "name_en": "Komo",
+        "slug": "komo",
+        "parent_id": "GAB001",
+        "parent_name_local": "Estuaire",
+        "parent_name_en": "Estuaire"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.504,
+          0.271
+        ]
+      },
+      "properties": {
+        "id": "GAB001002",
+        "name_local": "Komo-Mondah",
+        "name_en": "Komo-Mondah",
+        "slug": "komo-mondah",
+        "parent_id": "GAB001",
+        "parent_name_local": "Estuaire",
+        "parent_name_en": "Estuaire"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.192,
+          -1.504
+        ]
+      },
+      "properties": {
+        "id": "GAB002003",
+        "name_local": "Lebombi-Leyou",
+        "name_en": "Lebombi-Leyou",
+        "slug": "lebombi-leyou",
+        "parent_id": "GAB002",
+        "parent_name_local": "Haut-Ogooue",
+        "parent_name_en": "Haut-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.736,
+          -1.322
+        ]
+      },
+      "properties": {
+        "id": "GAB002004",
+        "name_local": "Lekabi-Lewolo",
+        "name_en": "Lekabi-Lewolo",
+        "slug": "lekabi-lewolo",
+        "parent_id": "GAB002",
+        "parent_name_local": "Haut-Ogooue",
+        "parent_name_en": "Haut-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.012,
+          -1.747
+        ]
+      },
+      "properties": {
+        "id": "GAB002005",
+        "name_local": "Lekoko",
+        "name_en": "Lekoko",
+        "slug": "lekoko",
+        "parent_id": "GAB002",
+        "parent_name_local": "Haut-Ogooue",
+        "parent_name_en": "Haut-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.866,
+          -1.151
+        ]
+      },
+      "properties": {
+        "id": "GAB002006",
+        "name_local": "Lekoni-Lekori",
+        "name_en": "Lekoni-Lekori",
+        "slug": "lekoni-lekori",
+        "parent_id": "GAB002",
+        "parent_name_local": "Haut-Ogooue",
+        "parent_name_en": "Haut-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.493,
+          0.377
+        ]
+      },
+      "properties": {
+        "id": "GAB001004",
+        "name_local": "Libreville",
+        "name_en": "Libreville",
+        "slug": "libreville",
+        "parent_id": "GAB001",
+        "parent_name_local": "Estuaire",
+        "parent_name_en": "Estuaire"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.264,
+          -1.376
+        ]
+      },
+      "properties": {
+        "id": "GAB007001",
+        "name_local": "Lolo-Bouenguidi",
+        "name_en": "Lolo-Bouenguidi",
+        "slug": "lolo-bouenguidi",
+        "parent_id": "GAB007",
+        "parent_name_local": "Ogooue-Lolo",
+        "parent_name_en": "Ogooue-Lolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.624,
+          -1.445
+        ]
+      },
+      "properties": {
+        "id": "GAB007002",
+        "name_local": "Lombo-Bouenguidi",
+        "name_en": "Lombo-Bouenguidi",
+        "slug": "lombo-bouenguidi",
+        "parent_id": "GAB007",
+        "parent_name_local": "Ogooue-Lolo",
+        "parent_name_en": "Ogooue-Lolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.845,
+          -0.086
+        ]
+      },
+      "properties": {
+        "id": "GAB006002",
+        "name_local": "Lope",
+        "name_en": "Lope",
+        "slug": "lope",
+        "parent_id": "GAB006",
+        "parent_name_local": "Ogooue-Ivindo",
+        "parent_name_en": "Ogooue-Ivindo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.258,
+          -2.202
+        ]
+      },
+      "properties": {
+        "id": "GAB004004",
+        "name_local": "Louetsi-Bibaka",
+        "name_en": "Louetsi-Bibaka",
+        "slug": "louetsi-bibaka",
+        "parent_id": "GAB004",
+        "parent_name_local": "Ngounie",
+        "parent_name_en": "Ngounie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.528,
+          -2.199
+        ]
+      },
+      "properties": {
+        "id": "GAB004005",
+        "name_local": "Louetsi-Wano",
+        "name_en": "Louetsi-Wano",
+        "slug": "louetsi-wano",
+        "parent_id": "GAB004",
+        "parent_name_local": "Ngounie",
+        "parent_name_en": "Ngounie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.583,
+          -3.261
+        ]
+      },
+      "properties": {
+        "id": "GAB005006",
+        "name_local": "Mongo",
+        "name_en": "Mongo",
+        "slug": "mongo",
+        "parent_id": "GAB005",
+        "parent_name_local": "Nyanga",
+        "parent_name_en": "Nyanga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.797,
+          -2.051
+        ]
+      },
+      "properties": {
+        "id": "GAB004009",
+        "name_local": "Mougalaba",
+        "name_en": "Mougalaba",
+        "slug": "mougalaba",
+        "parent_id": "GAB004",
+        "parent_name_local": "Ngounie",
+        "parent_name_en": "Ngounie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.028,
+          -2.844
+        ]
+      },
+      "properties": {
+        "id": "GAB005005",
+        "name_local": "Mougoutsi",
+        "name_en": "Mougoutsi",
+        "slug": "mougoutsi",
+        "parent_id": "GAB005",
+        "parent_name_local": "Nyanga",
+        "parent_name_en": "Nyanga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.839,
+          -0.899
+        ]
+      },
+      "properties": {
+        "id": "GAB007003",
+        "name_local": "Mouloundou",
+        "name_en": "Mouloundou",
+        "slug": "mouloundou",
+        "parent_id": "GAB007",
+        "parent_name_local": "Ogooue-Lolo",
+        "parent_name_en": "Ogooue-Lolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.173,
+          0.345
+        ]
+      },
+      "properties": {
+        "id": "GAB006003",
+        "name_local": "Mvoung",
+        "name_en": "Mvoung",
+        "slug": "mvoung",
+        "parent_id": "GAB006",
+        "parent_name_local": "Ogooue-Ivindo",
+        "parent_name_en": "Ogooue-Ivindo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.225,
+          -1.585
+        ]
+      },
+      "properties": {
+        "id": "GAB004006",
+        "name_local": "Ndolou",
+        "name_en": "Ndolou",
+        "slug": "ndolou",
+        "parent_id": "GAB004",
+        "parent_name_local": "Ngounie",
+        "parent_name_en": "Ngounie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.991,
+          -2.258
+        ]
+      },
+      "properties": {
+        "id": "GAB008003",
+        "name_local": "Ndougou",
+        "name_en": "Ndougou",
+        "slug": "ndougou",
+        "parent_id": "GAB008",
+        "parent_name_local": "Ogooue-Maritime",
+        "parent_name_en": "Ogooue-Maritime"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.81,
+          0.788
+        ]
+      },
+      "properties": {
+        "id": "GAB001003",
+        "name_local": "Noya",
+        "name_en": "Noya",
+        "slug": "noya",
+        "parent_id": "GAB001",
+        "parent_name_local": "Estuaire",
+        "parent_name_en": "Estuaire"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.553,
+          2.095
+        ]
+      },
+      "properties": {
+        "id": "GAB009003",
+        "name_local": "Ntem",
+        "name_en": "Ntem",
+        "slug": "ntem",
+        "parent_id": "GAB009",
+        "parent_name_local": "Woleu-Ntem",
+        "parent_name_en": "Woleu-Ntem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.92,
+          -1.094
+        ]
+      },
+      "properties": {
+        "id": "GAB007004",
+        "name_local": "Offoue-Onoye",
+        "name_en": "Offoue-Onoye",
+        "slug": "offoue-onoye",
+        "parent_id": "GAB007",
+        "parent_name_local": "Ogooue-Lolo",
+        "parent_name_en": "Ogooue-Lolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.172,
+          -0.704
+        ]
+      },
+      "properties": {
+        "id": "GAB003002",
+        "name_local": "Ogooue et Lacs",
+        "name_en": "Ogooue et Lacs",
+        "slug": "ogooue-et-lacs",
+        "parent_id": "GAB003",
+        "parent_name_local": "Moyen-Ogooue",
+        "parent_name_en": "Moyen-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.64,
+          -2.147
+        ]
+      },
+      "properties": {
+        "id": "GAB002007",
+        "name_local": "Ogooue-Letili",
+        "name_en": "Ogooue-Letili",
+        "slug": "ogooue-letili",
+        "parent_id": "GAB002",
+        "parent_name_local": "Haut-Ogooue",
+        "parent_name_en": "Haut-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.569,
+          -1.439
+        ]
+      },
+      "properties": {
+        "id": "GAB004007",
+        "name_local": "Ogoulou",
+        "name_en": "Ogoulou",
+        "slug": "ogoulou",
+        "parent_id": "GAB004",
+        "parent_name_local": "Ngounie",
+        "parent_name_en": "Ngounie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.429,
+          0.775
+        ]
+      },
+      "properties": {
+        "id": "GAB009004",
+        "name_local": "Okano",
+        "name_en": "Okano",
+        "slug": "okano",
+        "parent_id": "GAB009",
+        "parent_name_local": "Woleu-Ntem",
+        "parent_name_en": "Woleu-Ntem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.593,
+          -1.63
+        ]
+      },
+      "properties": {
+        "id": "GAB002008",
+        "name_local": "Passa",
+        "name_en": "Passa",
+        "slug": "passa",
+        "parent_id": "GAB002",
+        "parent_name_local": "Haut-Ogooue",
+        "parent_name_en": "Haut-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.208,
+          -1.702
+        ]
+      },
+      "properties": {
+        "id": "GAB002009",
+        "name_local": "Plateaux",
+        "name_en": "Plateaux",
+        "slug": "plateaux",
+        "parent_id": "GAB002",
+        "parent_name_local": "Haut-Ogooue",
+        "parent_name_en": "Haut-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.738,
+          -0.668
+        ]
+      },
+      "properties": {
+        "id": "GAB002010",
+        "name_local": "Sebe-Brikolo",
+        "name_en": "Sebe-Brikolo",
+        "slug": "sebe-brikolo",
+        "parent_id": "GAB002",
+        "parent_name_local": "Haut-Ogooue",
+        "parent_name_en": "Haut-Ogooue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.676,
+          -1.375
+        ]
+      },
+      "properties": {
+        "id": "GAB004008",
+        "name_local": "Tsamba-Magotsi",
+        "name_en": "Tsamba-Magotsi",
+        "slug": "tsamba-magotsi",
+        "parent_id": "GAB004",
+        "parent_name_local": "Ngounie",
+        "parent_name_en": "Ngounie"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.573,
+          1.494
+        ]
+      },
+      "properties": {
+        "id": "GAB009005",
+        "name_local": "Woleu",
+        "name_en": "Woleu",
+        "slug": "woleu",
+        "parent_id": "GAB009",
+        "parent_name_local": "Woleu-Ntem",
+        "parent_name_en": "Woleu-Ntem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.854,
+          0.887
+        ]
+      },
+      "properties": {
+        "id": "GAB006004",
+        "name_local": "Zadie",
+        "name_en": "Zadie",
+        "slug": "zadie",
+        "parent_id": "GAB006",
+        "parent_name_local": "Ogooue-Ivindo",
+        "parent_name_en": "Ogooue-Ivindo"
+      }
+    }
+  ]
+}

@@ -1,0 +1,733 @@
+﻿
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173F35">
+
+  <title>EcoShield — Observatoire environnemental</title>
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css">
+  <style>
+    .hero .hero-title {
+  text-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.35),
+    0 12px 36px rgba(0, 0, 0, 0.35);
+}
+    .hero {
+  position: relative;   /* référence pour le positionnement absolu des particules */
+  overflow: hidden;     /* coupe tout ce qui dépasse du hero */
+}
+
+#tsparticles {
+  position: absolute;
+  inset: 0;             /* top/right/bottom/left = 0 */
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#tsparticles canvas {
+  position: absolute !important; /* évite le position: fixed éventuel */
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.hero-content {
+  position: relative;   /* passe au-dessus des particules */
+  z-index: 1;
+}
+  </style>
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- ═══════════════════════════════════════
+       BARRE LATÉRALE
+  ═══════════════════════════════════════ -->
+
+  <aside class="sidebar">
+
+    <div class="brand">
+      <img src="assets/logo.png" alt="EcoShield">
+      <div>
+        <strong>EcoShield</strong>
+        <small>Observatoire environnemental</small>
+      </div>
+    </div>
+
+    <!-- Navigation principale -->
+
+    <div class="nav-label">TABLEAU DE BORD</div>
+
+    <nav aria-label="Navigation principale">
+
+      <button class="nav-btn active"
+              data-view="overview"
+              aria-current="page">
+
+        <i data-lucide="layout-dashboard" aria-hidden="true"></i>
+        <span>Vue d'ensemble</span>
+
+      </button>
+
+      <button class="nav-btn" data-view="climate">
+
+        <i data-lucide="cloud-sun" aria-hidden="true"></i>
+        <span>Analyse climatique</span>
+
+      </button>
+
+      <button class="nav-btn" data-view="trends">
+
+        <i data-lucide="chart-no-axes-combined" aria-hidden="true"></i>
+        <span>Tendances statistiques</span>
+
+      </button>
+
+      <button class="nav-btn" data-view="signals">
+
+        <i data-lucide="shield-alert" aria-hidden="true"></i>
+        <span>Signaux environnementaux</span>
+
+      </button>
+
+      <button class="nav-btn" data-view="provinces">
+
+        <i data-lucide="map-pinned" aria-hidden="true"></i>
+        <span>Exploration provinciale</span>
+
+      </button>
+
+    </nav>
+
+    <!-- Navigation secondaire -->
+
+    <div class="nav-label secondary-label">INFORMATIONS</div>
+
+    <nav aria-label="Informations">
+
+      <button class="nav-btn" data-view="methods">
+
+        <i data-lucide="book-open" aria-hidden="true"></i>
+        <span>Méthodologie</span>
+
+      </button>
+
+    </nav>
+
+    <!-- Pied de sidebar -->
+
+    <div class="sidebar-footer">
+
+      <span class="status-dot"></span>
+      Données chargées
+
+      <small>EcoShield · Version MVP</small>
+
+    </div>
+
+  </aside>
+
+
+  <!-- ═══════════════════════════════════════
+       CONTENU PRINCIPAL
+  ═══════════════════════════════════════ -->
+
+  <main class="main">
+
+    <!-- En-tête -->
+
+    <header class="topbar">
+
+      <div>
+
+        <div class="eyebrow">
+          OBSERVATOIRE ENVIRONNEMENTAL DU GABON
+        </div>
+
+        <h1 id="pageTitle">Vue d'ensemble</h1>
+
+      </div>
+
+      <span class="period-pill" id="globalPeriod">
+        Chargement...
+      </span>
+
+    </header>
+
+
+    <div class="content">
+
+
+      <!-- ═══════════════════════════════════
+           1. VUE D'ENSEMBLE
+      ═══════════════════════════════════ -->
+
+      <section class="view active" id="view-overview">
+
+    <div class="hero">
+
+  <!-- Particules : limitées au hero -->
+  <div id="tsparticles"></div>
+
+  <div class="hero-content">
+    <span class="eyebrow light">
+      COMPRENDRE · MESURER · ANTICIPER
+    </span>
+
+    <h2>
+      Observer les évolutions<br>
+      de l'environnement.
+    </h2>
+
+    <p>
+      Explorez les indicateurs climatiques, les tendances
+      statistiques et les signaux environnementaux autour
+      de Libreville et dans les provinces du Gabon.
+    </p>
+
+    <button class="hero-btn" data-go="climate">
+      Explorer les données →
+    </button>
+  </div>
+
+</div>
+
+
+        <div class="section-heading">
+
+          <div>
+            <span class="eyebrow">INDICATEURS CLÉS</span>
+            <h2>Vue synthétique</h2>
+          </div>
+
+        </div>
+
+
+        <div class="kpi-grid" id="overviewKpis"></div>
+
+
+        <div class="grid two">
+
+          <article class="card">
+
+            <div class="card-head">
+
+              <div>
+                <span class="eyebrow">DERNIERS RELEVÉS</span>
+                <h3>État des variables</h3>
+              </div>
+
+            </div>
+
+            <div id="latestValues" class="latest-list"></div>
+
+          </article>
+
+
+          <article class="card">
+
+            <div class="card-head">
+
+              <div>
+                <span class="eyebrow">ANALYSE STATISTIQUE</span>
+                <h3>Résultats des tendances</h3>
+              </div>
+
+            </div>
+
+            <div id="trendSummary"></div>
+
+          </article>
+
+        </div>
+
+
+        <div class="source-note" id="overviewSource"></div>
+
+      </section>
+
+
+
+      <!-- ═══════════════════════════════════
+           2. ANALYSE CLIMATIQUE
+      ═══════════════════════════════════ -->
+
+      <section class="view" id="view-climate">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="eyebrow">SÉRIES TEMPORELLES</span>
+
+            <h2>Analyse climatique</h2>
+
+            <p>
+              Évolution mensuelle des variables issues de NASA Giovanni.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <article class="card">
+
+          <div class="control-row">
+
+            <label>
+              Variable
+
+              <select id="climateVariable">
+
+                <option value="TAIR">
+                  Température de l'air
+                </option>
+
+                <option value="PRECIP">
+                  Précipitations
+                </option>
+
+                <option value="SOILM">
+                  Humidité du sol (0–10 cm)
+                </option>
+
+              </select>
+
+            </label>
+
+            <div id="climatePeriod" class="period-caption"></div>
+
+          </div>
+
+
+          <div class="chart-wrap large">
+            <canvas id="climateChart"></canvas>
+          </div>
+
+
+          <div id="climateDescription" class="interp"></div>
+
+        </article>
+
+
+        <div class="grid three" id="variableCards"></div>
+
+      </section>
+
+
+
+      <!-- ═══════════════════════════════════
+           3. TENDANCES STATISTIQUES
+      ═══════════════════════════════════ -->
+
+      <section class="view" id="view-trends">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="eyebrow">
+              MANN-KENDALL · PENTE DE SEN
+            </span>
+
+            <h2>Tendances statistiques</h2>
+
+            <p>
+              Évaluation des évolutions à partir des séries mensuelles
+              et annuelles.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <article class="card">
+
+          <div class="control-row">
+
+            <label>
+              Type d'analyse
+
+              <select id="trendType">
+
+                <option value="saisonnier">
+                  Analyse saisonnière
+                </option>
+
+                <option value="annuel">
+                  Analyse annuelle
+                </option>
+
+              </select>
+
+            </label>
+
+          </div>
+
+
+          <div class="table-wrap">
+
+            <table>
+
+              <thead>
+
+                <tr>
+                  <th>Variable</th>
+                  <th>Pente de Sen</th>
+                  <th>IC 95 %</th>
+                  <th>p ajustée (BH)</th>
+                  <th>Conclusion</th>
+                </tr>
+
+              </thead>
+
+              <tbody id="trendTable"></tbody>
+
+            </table>
+
+          </div>
+
+        </article>
+
+
+        <div class="grid two">
+
+          <article class="card">
+
+            <span class="eyebrow">INTERPRÉTATION</span>
+
+            <h3>Comment lire ces résultats ?</h3>
+
+            <p>
+              La pente de Sen estime la variation médiane par unité
+              de temps. L'intervalle de confiance à 95 % indique
+              la plage d'incertitude estimée.
+            </p>
+
+            <p>
+              La correction Benjamini-Hochberg contrôle le taux
+              de fausses découvertes lors des tests multiples.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <span class="eyebrow">RÉSULTAT GLOBAL</span>
+
+            <h3 id="trendConclusionTitle">Synthèse</h3>
+
+            <p id="trendConclusion"></p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- ═══════════════════════════════════
+           4. SIGNAUX ENVIRONNEMENTAUX
+      ═══════════════════════════════════ -->
+
+      <section class="view" id="view-signals">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="eyebrow">INDICATEURS EXPLORATOIRES</span>
+
+            <h2>Signaux environnementaux</h2>
+
+            <p>
+              Historique des anomalies observées entre janvier 2016
+              et septembre 2025.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="kpi-grid" id="signalKpis"></div>
+
+
+        <div class="grid two">
+
+          <article class="card">
+
+            <span class="eyebrow">RÉPARTITION</span>
+
+            <h3>Niveaux de signal</h3>
+
+            <div class="chart-wrap">
+              <canvas id="signalChart"></canvas>
+            </div>
+
+          </article>
+
+
+          <article class="card">
+
+            <span class="eyebrow">DERNIÈRE OBSERVATION</span>
+
+            <h3 id="lastSignalTitle"></h3>
+
+            <p id="lastSignalDate" class="muted"></p>
+
+            <div id="lastSignalDetail" class="interp"></div>
+
+          </article>
+
+        </div>
+
+
+        <article class="card">
+
+          <div class="card-head">
+
+            <div>
+
+              <span class="eyebrow">HISTORIQUE MENSUEL</span>
+
+              <h3>Observations et recommandations</h3>
+
+            </div>
+
+            <select id="signalFilter" class="compact-select">
+
+              <option value="all">
+                Tous les signaux
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="table-wrap">
+
+            <table>
+
+              <thead>
+
+                <tr>
+                  <th>Date</th>
+                  <th>Température</th>
+                  <th>Précipitations</th>
+                  <th>Humidité du sol</th>
+                  <th>Niveau de signal</th>
+                </tr>
+
+              </thead>
+
+              <tbody id="signalTable"></tbody>
+
+            </table>
+
+          </div>
+
+        </article>
+
+      </section>
+
+
+
+      <!-- ═══════════════════════════════════
+           5. EXPLORATION PROVINCIALE
+      ═══════════════════════════════════ -->
+
+      <section class="view" id="view-provinces">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="eyebrow">EXPLORATION TERRITORIALE</span>
+
+            <h2>Les neuf provinces du Gabon</h2>
+
+            <p>
+              Exploration des profils climatiques simulés
+              sur la période 2016–2025.
+            </p>
+
+          </div>
+
+          <span class="simulation-tag">SIMULATION</span>
+
+        </div>
+
+
+        <article class="card">
+
+          <div id="ecoshieldMap" role="application" aria-label="Carte interactive du Gabon"></div>
+
+          <div class="control-row">
+
+            <label>
+              Province
+
+              <select id="provinceSelect"></select>
+
+            </label>
+
+
+            <label>
+              Variable
+
+              <select id="provinceVariable">
+
+                <option value="temperature_c">
+                  Température (°C)
+                </option>
+
+                <option value="precipitation_mm">
+                  Précipitations (mm/mois)
+                </option>
+
+                <option value="humidite_sol_kg_m2">
+                  Humidité du sol (kg/m²)
+                </option>
+
+              </select>
+
+            </label>
+
+          </div>
+
+
+          <div id="provinceStats" class="kpi-grid compact-kpis"></div>
+
+
+          <div class="chart-wrap large">
+            <canvas id="provinceChart"></canvas>
+          </div>
+
+
+          <div id="provinceSignal" class="interp"></div>
+
+        </article>
+
+
+        <p class="muted small">
+          Les profils provinciaux sont des données de démonstration
+          générées artificiellement. Ils servent à illustrer
+          les fonctionnalités d'exploration territoriale.
+        </p>
+
+      </section>
+
+
+
+      <!-- ═══════════════════════════════════
+           6. MÉTHODOLOGIE
+      ═══════════════════════════════════ -->
+
+      <section class="view" id="view-methods">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="eyebrow">TRANSPARENCE SCIENTIFIQUE</span>
+
+            <h2>Données et méthodologie</h2>
+
+            <p>
+              Origine des données, traitements et limites
+              d'interprétation.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div id="methodsContent"></div>
+
+      </section>
+
+
+
+      <!-- ═══════════════════════════════════
+           PIED DE PAGE
+      ═══════════════════════════════════ -->
+
+      <footer>
+        EcoShield · Observatoire environnemental ·
+        Projet de démonstration scientifique
+      </footer>
+
+
+    </div>
+
+  </main>
+
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     BIBLIOTHÈQUES ET SCRIPTS
+═══════════════════════════════════════ -->
+
+<!-- Lucide : bibliothèque d'icônes -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- Graphiques -->
+<script src="vendor/chart.umd.js"></script>
+
+<!-- Données de l'application -->
+<script src="data/bundle.js"></script>
+
+<!-- Initialisation des icônes -->
+<script>
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+</script>
+
+<!-- Application EcoShield -->
+ <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script>
+  tsParticles.load("tsparticles", {
+    fullScreen: { enable: false },   // ← la ligne qui manquait
+    fpsLimit: 60,
+    particles: {
+      number: { value: 60 },
+      color: { value: "#ffffff" },
+      links: { enable: true, distance: 100, color: "#ffffff", opacity: 0.4, width: 1 },
+      move: { enable: true, speed: 1.5 },
+      opacity: { value: 0.6 },
+      size: { value: { min: 1, max: 3 } }
+    },
+    interactivity: {
+      detectsOn: "window",           // le survol fonctionne même sous le texte
+      events: { onHover: { enable: true, mode: "grab" } },
+      modes: { grab: { distance: 180, links: { opacity: 0.8 } } }
+    },
+    detectRetina: true
+  });
+</script>
+<script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+<script src="js/maplibre-map.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
+
+
+
+

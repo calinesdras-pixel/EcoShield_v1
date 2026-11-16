@@ -1,0 +1,18 @@
+{
+  "periode_analysee": [
+    "2016-01-01",
+    "2025-09-01"
+  ],
+  "periode_reference": "2016-2024",
+  "nombre_mois": 117,
+  "dernier_releve": "2025-09-01",
+  "dernier_niveau_signal": "SIGNAL ISOLÉ À SURVEILLER",
+  "derniere_recommandation": "Surveiller les prochains relevés et vérifier si l'anomalie se confirme.",
+  "nombre_mois_par_signal": {
+    "AUCUN SIGNAL COMBINÉ": 80,
+    "SIGNAL ISOLÉ À SURVEILLER": 27,
+    "DÉFICIT HYDRIQUE POTENTIEL": 5,
+    "SIGNAL HYDRIQUE RENFORCÉ": 5
+  },
+  "limite": "Indicateurs exploratoires, non validés comme alertes opérationnelles. Données Giovanni localisées autour de Libreville."
+}

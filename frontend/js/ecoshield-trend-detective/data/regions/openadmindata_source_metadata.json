@@ -1,0 +1,8 @@
+{
+  "source": "Open Admin Data Gabon",
+  "api": "https://api.openadmindata.org/api/v1/ga",
+  "license": "CC BY 4.0",
+  "attribution": "Open Admin Data",
+  "downloaded_at": "2026-11-15T03:25:21.129169+00:00",
+  "note": "Coordonn?es ponctuelles. Elles ne repr?sentent pas des fronti?res administratives."
+}
